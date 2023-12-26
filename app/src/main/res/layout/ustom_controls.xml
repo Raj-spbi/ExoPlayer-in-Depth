@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="#208A8A8A">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -240,5 +239,5 @@
         android:padding="10dp"
         android:scaleType="centerInside"
         android:src="@drawable/ic_baseline_lock_open_24"
-        android:visibility="gone" />
+        android:visibility="visible" />
 </RelativeLayout>

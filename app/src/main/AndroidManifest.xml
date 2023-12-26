@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.aakash.databindingtest">
+    package="com.aakash.databindingtest" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission
         android:name="android.permission.WRITE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
@@ -12,34 +13,39 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DataBindingTest">
+        android:theme="@style/Theme.DataBindingTest"
+        android:usesCleartextTraffic="true" >
+
         <activity
             android:name=".VideoPlayerActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".StyledPlayerActivity"
             android:exported="true" /> <!-- <activity -->
         <!-- android:name=".VideoPlayerActivity" -->
         <!-- android:exported="true" /> -->
+      <!-- <activity -->
+        <!-- android:name=".VideoPlayerActivity" -->
+        <!-- android:exported="true" /> -->
         <activity
             android:name=".CustomMediaPlayerActivity"
-            android:label="@string/app_name"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
-            android:exported="true"
             android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/app_name"
             android:resizeableActivity="true"
             android:supportsPictureInPicture="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"
-            tools:targetApi="n">
+            tools:targetApi="n" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
